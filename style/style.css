@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+  }
+
+@font-face{
+    font-family: 'Good Morning';
+src: url(/assets/fuentes/Good\ Morning.ttf);}
+
+@font-face{
+    font-family: 'Organic Relief';
+src: url(/assets/fuentes/Organic\ Relief.ttf);
+font-weight: bold;
+}
+
+h1 {
+    font-family: 'Good Morning';
+    text-align: center;
+    font-size: 80px;
+    color: #00ff01;   
+}
+
+header nav ul { 
+    list-style: none;
+    font-family: 'Organic Relief';
+    font-size: 20px;
+    color:#ba0ce0;   
+}
+
+.nav-sombreado{
+    padding: 8px 12px ;
+    border-radius: 3px;
+}
+.nav-sombreado:hover{
+background-color: #00ff01 ;
+transition: 0.5s;
+}
+
+a{
+    text-decoration:none;
+    color:#ba0ce0;
+}
+
+header ul {
+    padding: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.imgnav{
+    width:300px;
+}
+ p{ 
+    font-family: 'Neucha', cursive;
+    font-size: 20px;
+    color: white;  
+ }
+
+.cont-portada{
+    min-height: 100vh;
+}
+
+.cont-portada img{
+    width: 100%;
+}
+
+.sinopsis h2 {
+   text-align: center;
+   padding: 20px;
+   font-family: 'Organic Relief';
+   font-size: 40px;
+   color: #ba0ce0;
+}
+
+.sinopsis p{   
+    padding: 20px;
+    margin: 10px 50px;
+    font-size: 30px;
+    border: 10px double white;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.cajaper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    margin: 20px 0;
+}
+
+.perjs{
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    border: 5px dashed #00ff01;
+}
+.perjs img{
+width: 100%;
+border-radius: 100px;
+}
+.perjs h2{
+    color:white;
+    font-family:'Neucha' ;
+}
+
+footer{
+    font-family:'Neucha'; 
+    padding: 50px;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+footer h2 {
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 480px) {
+   h1{
+    font-size: 40px;
+   }
+   header nav ul {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 8px;
+   
+   }
+   .nav-sombreado{
+    padding: 8px 8px ;
+    border-radius: 2px;
+   }
+
+   .imgnav{
+    width: 100px;
+    display: block;
+   }
+    }
+
+
+    
