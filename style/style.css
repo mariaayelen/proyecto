@@ -2,156 +2,150 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
-
-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 105%;
-    min-height: 100%;
-    transform: translateX(calc((100% - 100vw) / 2));
-    z-index: -2;
-  }
-
-@font-face{
-    font-family: 'Good Morning';
-src: url(/assets/fuentes/Good\ Morning.ttf);}
-
-@font-face{
-    font-family: 'Organic Relief';
-src: url(/assets/fuentes/Organic\ Relief.ttf);
-font-weight: bold;
+.conteiner11{
+    background-color: aqua;
+    width: 70%;
+    max-width: 1200px; 
+    
 }
 
-h1 {
-    font-family: 'Good Morning';
+header div{
+    width: 100%;
+    background-color: #fffcf5;
     text-align: center;
-    font-size: 80px;
-    color: #00ff01;   
+
+}
+header div img{
+   max-width: 100%;
+   width: 300px;
 }
 
-header nav ul { 
+header nav ul{ 
+   
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
     list-style: none;
-    font-family: 'Organic Relief';
     font-size: 20px;
-    color:#ba0ce0;   
+    padding: 0;
+   background-image:url(https://static5.depositphotos.com/1038117/460/i/600/depositphotos_4608292-stock-photo-texture-fresh-wood-background.jpg);
+   font-weight: 500;
 }
-
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
 .nav-sombreado{
     padding: 8px 12px ;
     border-radius: 3px;
+    flex: 1 0 auto;
+    text-align: center;
 }
 .nav-sombreado:hover{
-background-color: #00ff01 ;
-transition: 0.5s;
-}
-
-a{
-    text-decoration:none;
-    color:#ba0ce0;
-}
-
-header ul {
-    padding: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+background-color:hsl(51, 70%, 55%) ;
+transition: 0.2s;
 }
 
 
-.imgnav{
-    width:300px;
+#carouselExampleAutoplaying{
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: auto;
+   
+    
 }
- p{ 
+
+p{
     font-family: 'Neucha', cursive;
-    font-size: 20px;
-    color: white;  
- }
-
-.cont-portada{
-    min-height: 100vh;
+}
+.carousel-inner div img{
+    width: 20%;
+    height: 30%;
+   
 }
 
-.cont-portada img{
-    width: 100%;
+.carousel-item{
+transition-duration: 3s;
 }
 
-.sinopsis h2 {
-   text-align: center;
-   padding: 20px;
-   font-family: 'Organic Relief';
-   font-size: 40px;
-   color: #ba0ce0;
+h2{
+    font-family:cursive;
 }
 
-.sinopsis p{   
-    padding: 20px;
-    margin: 10px 50px;
-    font-size: 30px;
-    border: 10px double white;
-    border-radius: 20px;
-    text-align: justify;
-}
-
-.cajaper {
+.contenedor{
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center ;
     margin: 20px 0;
 }
-
-.perjs{
-    width: 250px;
+.caja{
+    width: 30%;
     padding: 15px;
     text-align: center;
     margin: 10px;
-    border-radius: 10px;
-    border: 5px dashed #00ff01;
+    border: 5px solid black;
+    overflow:auto;
+    animation:rollIn;
+    animation-duration: 3s;
 }
-.perjs img{
-width: 100%;
-border-radius: 100px;
-}
-.perjs h2{
-    color:white;
-    font-family:'Neucha' ;
+.caja img{
+    width: 90%;
+
 }
 
 footer{
-    font-family:'Neucha'; 
-    padding: 50px;
-    font-size: 50px;
-    text-align: center;
-    
+    max-width: 100%;
+    border: 1px solid black;
 }
 
-footer h2 {
-    color: white;
-    font-size: 20px;
-}
-
-@media (max-width: 480px) {
-   h1{
-    font-size: 40px;
-   }
-   header nav ul {
-    width: 100%;
+.footer1{
+    background-color: #cfd8dc ;
+    display: flex;
     flex-wrap: wrap;
-    font-size: 8px;
-   
-   }
-   .nav-sombreado{
-    padding: 8px 8px ;
-    border-radius: 2px;
-   }
-
-   .imgnav{
-    width: 100px;
-    display: block;
-   }
-    }
-
-
+    justify-content:space-around;
     
+}
+
+.icon{
+    width: 20px;
+}
+
+.footer2{
+    background-color: #263238;
+    color: white;
+    display: flex;
+    font-size: 15px;
+    padding: 25px;
+    
+}
+.ultimotext h3{
+    font-size: 12px;
+}
+
+
+
+
+@media (max-width: 600px){
+    .contenedor{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .caja{
+        width: 80%;
+    }
+}
+
+@media (max-width: 556px){
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+}
